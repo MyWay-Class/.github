@@ -1,0 +1,54 @@
+<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1020"/>
+      <stop offset="1" stop-color="#122B46"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="130" y1="70" x2="1030" y2="350" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5EEAD4"/>
+      <stop offset="1" stop-color="#60A5FA"/>
+    </linearGradient>
+    <filter id="blur" x="-50" y="-50" width="1300" height="520" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="420" rx="32" fill="url(#bg)"/>
+  <circle cx="180" cy="120" r="88" fill="#1D4ED8" opacity="0.22" filter="url(#blur)"/>
+  <circle cx="1020" cy="90" r="120" fill="#14B8A6" opacity="0.16" filter="url(#blur)"/>
+  <circle cx="920" cy="320" r="160" fill="#38BDF8" opacity="0.14" filter="url(#blur)"/>
+
+  <path d="M105 286C212 222 300 200 420 214C544 230 633 306 748 302C857 299 956 233 1090 164" stroke="url(#accent)" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+  <path d="M105 316C214 252 313 236 425 246C545 257 626 327 744 324C858 321 954 260 1090 194" stroke="#93C5FD" stroke-width="2" stroke-linecap="round" opacity="0.45"/>
+
+  <rect x="82" y="78" width="236" height="42" rx="21" fill="white" fill-opacity="0.08"/>
+  <text x="105" y="106" fill="#D1FAE5" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="1.5">
+    MYWAYCLASS
+  </text>
+
+  <text x="82" y="190" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800">
+    내맘대로클래스
+  </text>
+  <text x="84" y="236" fill="#D1D5DB" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="500">
+    AI로 강의를 숏폼과 커스텀 강의로 재구성하는 교육 플랫폼
+  </text>
+
+  <g transform="translate(82 272)">
+    <rect width="160" height="46" rx="23" fill="#0F172A" fill-opacity="0.72" stroke="#38BDF8" stroke-opacity="0.45"/>
+    <text x="24" y="29" fill="#E2E8F0" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600">
+      AI Learning
+    </text>
+  </g>
+  <g transform="translate(252 272)">
+    <rect width="174" height="46" rx="23" fill="#0F172A" fill-opacity="0.72" stroke="#5EEAD4" stroke-opacity="0.45"/>
+    <text x="24" y="29" fill="#E2E8F0" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600">
+      Shortform LMS
+    </text>
+  </g>
+  <g transform="translate(438 272)">
+    <rect width="182" height="46" rx="23" fill="#0F172A" fill-opacity="0.72" stroke="#93C5FD" stroke-opacity="0.45"/>
+    <text x="24" y="29" fill="#E2E8F0" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600">
+      Custom Course
+    </text>
+  </g>
+</svg>
