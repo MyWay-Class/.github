@@ -4,6 +4,7 @@
 
 - 조직 프로필에서 보이는 소개는 [`profile/README.md`](./profile/README.md) 를 사용합니다.
 - 레포 페이지에서 바로 보이는 소개는 이 파일을 사용합니다.
+- 영문 버전은 [`README.en.md`](./README.en.md) 와 [`profile/README.en.md`](./profile/README.en.md) 를 사용합니다.
 
 ## 한 줄 소개
 
@@ -25,3 +26,6 @@
 
 자세한 소개는 [`profile/README.md`](./profile/README.md) 를 확인하세요.
 
+## 라이선스
+
+이 프로젝트는 2026 KIT 바이브코딩 공모전 출품작입니다.
