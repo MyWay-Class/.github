@@ -83,8 +83,9 @@ This project uses AI through specification and validation, not prompt-only workf
 
 ### Working Rules
 
-- Fix the objective before starting work
-- Keep instructions short, but make scope and acceptance criteria explicit
+- Fix the objective, target, and acceptance criteria before starting work
+- Keep instructions short, but make scope and references explicit
+- Include file names and line numbers when asking for analysis
 - Use documentation as the single source of truth
 - Record rationale in `docs/dev-logs/` after each change
 
@@ -92,6 +93,45 @@ This project uses AI through specification and validation, not prompt-only workf
 
 ```text
 Design -> Document -> Implement -> Validate -> Log
+```
+
+### Worktree Strategy
+
+- Compare up to two options only when it is actually useful
+- Compare by change size, file count, validation result, and structural fit
+- Do not trust the first result blindly; verify that docs and code still match
+- Record the selected option and rationale in `docs/dev-logs/`
+
+### Instruction Format
+
+```text
+[GOAL]
+State what to create or change in one line.
+
+[INPUT]
+- Current assumptions
+- Existing files, entities, APIs, and rules
+
+[SCOPE]
+- What this task may change
+- What it must not change
+
+[TASK]
+1. Concrete task 1
+2. Concrete task 2
+3. Concrete task 3
+
+[CONSTRAINTS]
+- Rules that must be respected
+- Error handling, response shape, and separation rules
+
+[OUTPUT]
+- Final deliverables
+- File types to create or update
+
+[ACCEPTANCE CRITERIA]
+- How completion is judged
+- How runtime behavior is verified
 ```
 
 ### AI Role Separation
@@ -108,7 +148,7 @@ LLMs are probabilistic systems, so the same input can produce different results.
 That is why this project controls AI with:
 
 - Spec-driven instructions
-- A/B worktree comparisons
+- Worktree-based A/B comparisons
 - Type checking
 - Fallback responses
 - Documented decisions

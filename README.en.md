@@ -24,6 +24,15 @@ An AI education platform that turns lectures into restructured learning flows in
 - Keep instructions short, but make scope and acceptance criteria explicit.
 - Record rationale in `docs/dev-logs/` after each change.
 
+## AI Collaboration
+
+- Write instructions in a short `goal / target / acceptance criteria / references` format.
+- Include file names and line numbers when asking for analysis.
+- Keep conventions in documents and only reference paths in task instructions.
+- Use worktrees to compare up to two solutions when it is actually useful.
+- Do not trust results blindly; check the docs, types, and validation output together.
+- Record the chosen path and summary in `docs/dev-logs/`.
+
 See [`profile/README.md`](./profile/README.md) for the full introduction.
 
 ## License
